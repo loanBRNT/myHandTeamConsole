@@ -4,5 +4,6 @@
 
 int main() {
     Equipe tfh("tfh");
+    tfh.afficherEquipe();
     return 0;
 }

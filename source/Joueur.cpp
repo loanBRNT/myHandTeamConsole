@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <sstream>
 #include "../prototype/Joueur.h"
 
 using namespace std;
@@ -17,7 +18,11 @@ bool Joueur::estCapitaine() const{
 }
 
 string Joueur::getInfos() const {
-    string infos = m_nom + " " + m_prenom;
+    string infos =  "";
+    stringstream stream;
+    stream << m_num;
+    stream >> infos;
+    infos += " | " + m_nom + " " + m_prenom;
     if (m_capitaine) {
         infos += " [C]";
     }
