@@ -39,7 +39,8 @@ void Equipe::initialiserEquipe() {
             } else {
                 cap = false;
             }
-            m_listeJoueur.push_back((Joueur(tableau[0],tableau[1],cap, std::stoi(tableau[3]))));
+            m_listeJoueur.push_back((Joueur(tableau[0],tableau[1],cap, std::stoi(tableau[3]),
+                                            tableau[4], std::stoi(tableau[5]), std::stoi(tableau[6]))));
             tableau.clear();
         }
     } else {

@@ -13,12 +13,15 @@ private:
 
     std::string m_nom;
     std::string m_prenom;
+    std::string m_poste;
     int m_num;
+    int m_pos;
+    int m_tot;
     bool m_capitaine;
 
 public:
 
-    Joueur(std::string nom, std::string prenom, bool capitaine, int num);
+    Joueur(std::string nom, std::string prenom, bool capitaine, int num, std::string poste, int butArret, int total);
     std::string getInfos() const;
     bool estCapitaine() const;
 };
